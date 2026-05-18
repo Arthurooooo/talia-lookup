@@ -1,6 +1,6 @@
 [package]
 name = "talia-lookup"
-version = "0.1.0"
+version = "0.1.1"
 description = "Talia Lookup — recherche croisée d'élèves Bubble"
 authors = ["Arthur"]
 edition = "2021"

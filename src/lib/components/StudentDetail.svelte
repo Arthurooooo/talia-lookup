@@ -99,10 +99,10 @@
         {@const age = ageFromBirth(user.birthDate)}
         <Chip text={`${age} ans · ${longDate(user.birthDate)}`} Icon={Gift} tint="pink" />
       {/if}
-      {#if user.becameStudentDate}
+      {#if !isLead && user.becameStudentDate}
         <Chip text={`Élève depuis ${longDate(user.becameStudentDate)}`} Icon={GraduationCap} tint="indigo" />
       {/if}
-      {#if user.currentTrainingEndDate}
+      {#if !isLead && user.currentTrainingEndDate}
         <Chip text={`Fin parcours ${longDate(user.currentTrainingEndDate)}`} Icon={FlagTriangleRight} tint="orange" />
       {/if}
       <Chip text={'ID …' + user.id.slice(-6)} Icon={Hash} tint="gray" clipboardText={user.id} copyable mono />
